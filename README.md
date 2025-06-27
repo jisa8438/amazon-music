@@ -4,7 +4,6 @@
 # 🎵 Amazon Music API – Unofficial
 
 A **FastAPI REST API** for Amazon Music offering metadata, playback, search, and lookups for tracks, albums, artists, playlists, and podcasts. Includes streaming URL extraction and Widevine DRM key retrieval.
-
 <p>
   <a href="https://github.com/AmineSoukara/amazon-music-api/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/AmineSoukara/amazon-music-api" alt="Contributors">
@@ -36,7 +35,8 @@ A **FastAPI REST API** for Amazon Music offering metadata, playback, search, and
 
 
 ---
-> ⚠️ The API is still in development. For issues or suggestions, [contact support](https://bio.link/aminesoukara).
+> ⚠️ The API is still in development. For issues or suggestions: [contact support](https://bio.link/aminesoukara). Also This API requires a premium Amazon Music account. If you find it useful and have a premium account you'd like to donate, it would be greatly appreciated. Donations help keep the API running and support multi-region access.
+
 ---
 ## 🔗 Quick Links
 - **Base URL**: [Click Here](https://amazon-music-api.vercel.app)
@@ -63,8 +63,7 @@ A **FastAPI REST API** for Amazon Music offering metadata, playback, search, and
 ---
 
 ## ⚠️ Legal Disclaimer
-This project is intended for educational and research purposes only. Amazon Music is a proprietary service, and this project interacts with Amazon's private/internal APIs. Usage of this API may violate Amazon’s [Terms of Service](https://www.amazon.com/gp/help/customer/display.html?nodeId=508088).  
-The authors are not affiliated with or endorsed by Amazon. You are responsible for ensuring compliance with applicable laws and service terms. Use at your own risk.
+This project is for educational and research purposes only. It interacts with Amazon's internal APIs, which may violate [Amazon's Terms of Service](https://www.amazon.com/gp/help/customer/display.html?nodeId=508088). The authors are not affiliated with Amazon. Use at your own risk and ensure legal compliance.
 
 ---
 
@@ -82,17 +81,10 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 ---
 
-## 🌍 Contributing
-
-<a href="https://github.com/AmineSoukara/amazon-music-api/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=aminesoukara/amazon-music-api" />
-</a>
-
-Contributions are always welcome!  
-See `contributing.md` to get started.
-
----
-
 ![⭐️](https://telegra.ph/file/b132a131aabe2106bd335.gif)
 
+> ⭐️ If you find this project useful, please consider starring the repo! It helps support the project and keeps it visible to others.
+
+
+---
 </div>
