@@ -48,16 +48,16 @@ A **FastAPI REST API** for Amazon Music offering metadata, playback, search, and
 | Method | Endpoint                            | Description                              |
 | ------ | ----------------------------------- | ---------------------------------------- |
 | `GET`  | `/account`                          | Get authenticated account info           |
-| `GET`  | `/search`                           | Search Amazon Music                      |
-| `GET`  | `/track/{track_id}`                 | Get metadata for a track                 |
-| `GET`  | `/album/{album_id}`                 | Get album details including tracks       |
-| `GET`  | `/artist/{artist_id}`               | Get artist info and discography          |
-| `GET`  | `/playlist/{playlist_id}`           | Get official playlist info               |
-| `GET`  | `/community_playlist/{playlist_id}` | Get community playlist info              |
-| `GET`  | `/episode/{episode_id}`             | Get a podcast episode                    |
-| `GET`  | `/podcast/{podcast_id}`             | Get a podcast show and episodes          |
-| `GET`  | `/lyrics/{track_id}`                | Get synced lyrics (LRC format)           |
-| `GET`  | `/stream_urls/{track_id}`           | Get streaming URLs in multiple qualities |
+| `GET`  | `/search?query={query}&type={type}`                           | Search Amazon Music                      |
+| `GET`  | `/track?id={track_id}`                 | Get metadata for a track                 |
+| `GET`  | `/album?id={album_id}`                 | Get album details including tracks       |
+| `GET`  | `/artist?id={artist_id}`               | Get artist info and discography          |
+| `GET`  | `/playlist?id={playlist_id}`           | Get official playlist info               |
+| `GET`  | `/community_playlist?id={playlist_id}` | Get community playlist info              |
+| `GET`  | `/episode?id={episode_id}`             | Get a podcast episode                    |
+| `GET`  | `/podcast?id={podcast_id}`             | Get a podcast show and episodes          |
+| `GET`  | `/lyrics?id={track_id}`                | Get lyrics            |
+| `GET`  | `/stream_urls?id={track_id}`           | Get streaming URLs in multiple qualities |
 | `POST` | `/widevine_key`                     | Decrypt Widevine DRM using PSSH          |
 
 ---
