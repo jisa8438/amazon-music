@@ -3,7 +3,7 @@
 
 # 🎵 Amazon Music API – Unofficial
 
-A **FastAPI**-based REST API that interfaces with Amazon Music, providing rich metadata and playback capabilities. Supports search, track/album/artist/playlist/podcast lookups, streaming URL extraction, and Widevine DRM key retrieval.
+A **FastAPI REST API** for Amazon Music offering metadata, playback, search, and lookups for tracks, albums, artists, playlists, and podcasts. Includes streaming URL extraction and Widevine DRM key retrieval.
 
 <p>
   <a href="https://github.com/AmineSoukara/amazon-music-api/graphs/contributors">
@@ -39,8 +39,7 @@ A **FastAPI**-based REST API that interfaces with Amazon Music, providing rich m
 > ⚠️ The API is still in development. For issues or suggestions, [contact support](https://bio.link/aminesoukara).
 ---
 ## 🔗 Quick Links
-- **Base URL**: [`https://amazon-music-api.vercel.app`](https://amazon-music-api.vercel.app)
-- [Documentation](https://amazon-music-api.vercel.app/)
+- **Base URL**: [Click Here](https://amazon-music-api.vercel.app)
 
 ---
 
