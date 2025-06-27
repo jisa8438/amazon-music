@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.imgur.com/Xj1dUCA.jpeg" alt="Amazon Music API" width="800">
+  <img src="https://i.imgur.com/Xj1dUCA.jpeg" alt="Amazon Music API" width="700">
 
 # 🎵 Amazon Music API – Unofficial
 
