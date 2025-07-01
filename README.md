@@ -47,6 +47,7 @@ A **FastAPI REST API** for Amazon Music offering metadata, playback, search, and
 
 | Method | Endpoint                            | Description                              |
 | ------ | ----------------------------------- | ---------------------------------------- |
+| `GET`  | `/login`                          | Get Access Tokens        |
 | `GET`  | `/account`                          | Get authenticated account info           |
 | `GET`  | `/search?query={query}&type={type}`                           | Search Amazon Music                      |
 | `GET`  | `/track?id={track_id}`                 | Get metadata for a track                 |
