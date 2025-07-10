@@ -64,13 +64,10 @@ A **FastAPI REST API** for Amazon Music offering metadata, playback, search, and
 ---
 
 ## ⚠️ Legal Disclaimer
-This project is for educational and research purposes only. It interacts with Amazon's internal APIs, which may violate [Amazon's Terms of Service](https://www.amazon.com/gp/help/customer/display.html?nodeId=508088). The authors are not affiliated with Amazon. Use at your own risk and ensure legal compliance.
 
----
-
-## 🛡 License
-
-MIT License. See [LICENSE](./LICENSE) for details.
+This project is intended for **educational and research purposes only**. It interacts with **Amazon’s internal APIs**, which may **violate their [Terms of Service](https://www.amazon.com/gp/help/customer/display.html?nodeId=508088)**.
+The authors are **not affiliated with Amazon**. This software is provided **“as is” without any warranties**, express or implied. Use of this tool is **at your own risk**, and you are solely responsible for ensuring **compliance with applicable laws and terms** in your country or region.
+This project is **non-commercial** and does **not host or distribute any Amazon-owned content**.
 
 ---
 
