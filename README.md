@@ -56,8 +56,11 @@ amz [URL_OR_ID] [OPTIONS]
   
 ### Examples
 ```bash
-# Download an album
+# Download an track
 amz https://music.amazon.com/albums/B077FLX9ZQ?trackAsin=B077F6QG2S
+
+# Download an album
+amz https://music.amazon.com/albums/B077FLX9ZQ
 
 # Download a playlist with high quality
 amz https://music.amazon.com/playlists/B0FBL3CC8M -q High
