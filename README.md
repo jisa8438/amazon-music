@@ -1,36 +1,36 @@
-<div align="center">
+ <div align="center">
   <img src="https://i.imgur.com/Xj1dUCA.jpeg" alt="Amazon Music API" width="700">
 
 # 🎵 Amazon Music API – Unofficial
 
 A **FastAPI REST API** for Amazon Music offering metadata, playback, search, and lookups for tracks, albums, artists, playlists, and podcasts. Includes streaming URL extraction and Widevine DRM key retrieval.
 <p>
-  <a href="https://github.com/AmineSoukara/amazon-music-api/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/AmineSoukara/amazon-music-api" alt="Contributors">
+  <a href="https://github.com/AmineSoukara/amazon-music/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/AmineSoukara/amazon-music" alt="Contributors">
   </a>
-  <a href="https://github.com/AmineSoukara/amazon-music-api/commits/main">
-    <img src="https://img.shields.io/github/last-commit/AmineSoukara/amazon-music-api" alt="Last commit">
+  <a href="https://github.com/AmineSoukara/amazon-music/commits/main">
+    <img src="https://img.shields.io/github/last-commit/AmineSoukara/amazon-music" alt="Last commit">
   </a>
-  <a href="https://github.com/AmineSoukara/amazon-music-api/network/members">
-    <img src="https://img.shields.io/github/forks/AmineSoukara/amazon-music-api" alt="Forks">
+  <a href="https://github.com/AmineSoukara/amazon-music/network/members">
+    <img src="https://img.shields.io/github/forks/AmineSoukara/amazon-music" alt="Forks">
   </a>
-  <a href="https://github.com/AmineSoukara/amazon-music-api/stargazers">
-    <img src="https://img.shields.io/github/stars/AmineSoukara/amazon-music-api?color=yellow" alt="Stars">
+  <a href="https://github.com/AmineSoukara/amazon-music/stargazers">
+    <img src="https://img.shields.io/github/stars/AmineSoukara/amazon-music?color=yellow" alt="Stars">
   </a>
-  <a href="https://github.com/AmineSoukara/amazon-music-api/issues">
-    <img src="https://img.shields.io/github/issues/AmineSoukara/amazon-music-api?color=purple" alt="Open Issues">
+  <a href="https://github.com/AmineSoukara/amazon-music/issues">
+    <img src="https://img.shields.io/github/issues/AmineSoukara/amazon-music?color=purple" alt="Open Issues">
   </a>
-  <a href="https://github.com/AmineSoukara/amazon-music-api/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/AmineSoukara/amazon-music-api.svg" alt="License">
+  <a href="https://github.com/AmineSoukara/amazon-music/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/AmineSoukara/amazon-music.svg" alt="License">
   </a>
 </p>
 
 <h4>
   <a href="https://amazon-music-api.vercel.app">API Docs</a>
   <span> · </span>
-  <a href="https://github.com/AmineSoukara/amazon-music-api/issues">Report Bug</a>
+  <a href="https://github.com/AmineSoukara/amazon-music/issues">Report Bug</a>
   <span> · </span>
-  <a href="https://github.com/AmineSoukara/amazon-music-api/issues">Request Feature</a>
+  <a href="https://github.com/AmineSoukara/amazon-music/issues">Request Feature</a>
 </h4>
 
 
@@ -38,6 +38,62 @@ A **FastAPI REST API** for Amazon Music offering metadata, playback, search, and
 > ⚠️ The API is still in development. For issues or suggestions: [contact support](https://bio.link/aminesoukara). Also This API requires a premium Amazon Music account. If you find it useful and have a premium account you'd like to donate, it would be greatly appreciated. Donations help keep the API running and support multi-region access.
 
 ---
+
+## 📦 Installation
+```bash
+pip install amazon-music
+```
+
+## 🖥️ CLI Usage
+The command-line interface provides easy access to Amazon Music content:
+
+### Basic Commands
+```bash
+amazon-music [URL_OR_ID] [OPTIONS]
+```
+
+<div align="left">
+  
+### Examples
+```bash
+# Download an album
+amazon-music https://music.amazon.com/albums/B08N5KWB9H
+
+# Download a playlist with high quality
+amazon-music https://music.amazon.com/playlists/B08N5KWB9H -q High
+
+# Download a track by ID
+amazon-music B08N5KWB9H -t track
+```
+
+### CLI Options
+```
+positional arguments:
+  url_or_id             Amazon Music URL or ID
+
+options:
+  -h, --help            show this help message and exit
+  -q {Max,Master,High,Normal,Medium,Low,Free}, --quality {Max,Master,High,Normal,Medium,Low,Free}
+                        Audio quality preference (default: Normal)
+  -t {auto,track,album,playlist}, --type {auto,track,album,playlist}
+                        Content type (default: auto-detect)
+  -o OUTPUT, --output OUTPUT
+                        Output directory (default: ./Music)
+  --temp-dir TEMP_DIR   Temporary directory (default: ./Music/temp)
+  --format-folder {1,2,3,4}
+                        Folder naming format (1-4, default: 4)
+  --format-track {1,2,3,4}
+                        Track naming format (1-4, default: 4)
+  --workers WORKERS     Number of parallel download workers (default: 2)
+  --zip                 Create ZIP archive for albums/playlists
+  --overwrite           Overwrite existing files
+  --token TOKEN         Amazon Music API access token
+  --clear-token         Remove stored access token
+  --show-token          Show the stored access token
+  ```
+</div>
+
+
 ## 🔗 Quick Links
 - **Base URL**: [Click Here](https://amazon-music-api.vercel.app)
 
