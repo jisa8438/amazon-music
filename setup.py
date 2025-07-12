@@ -20,6 +20,8 @@ URL = "https://github.com/AmineSoukara/Amazon-Music"
 VERSION = "1.7.2"  # Using semantic versioning
 
 # Get the long description from README
+
+
 def get_long_description():
     """Read the long description from README.md."""
     try:
