@@ -98,6 +98,39 @@ options:
   ```
 </div>
 
+## 🔐 Auth Token
+Star the repository on GitHub, then click "Get Auth Tokens" to access your authentication credentials. [Click Here](https://amazon-music-api.vercel.app/login)
+
+## 🎵 Quality
+
+| Quality   | Specification                          | Bitrate          | Format |
+|-----------|----------------------------------------|------------------|--------|
+| Low       | 48kbps                                 | 48 kbps          | OPUS   |
+| Medium    | 192kbps                                | 192 kbps         | OPUS   |
+| Normal    | 320kbps                                | 320 kbps         | OPUS   |
+| High      | ≤16-bit / ≤48 kHz                      | ≤1411 kbps       | FLAC   |
+| Master    | 24-bit / ≤96 kHz                       | ≥2300 kbps       | FLAC   |
+| Max       | 24-bit / ≤192 kHz                      | ≥4600 kbps       | FLAC   |
+
+### 📁 File & Folder Naming Formats
+
+#### Track File Formats
+
+| ID | Format Name            | Example Output                          |
+|----|------------------------|-----------------------------------------|
+| 1  | TITLE_ARTIST          | {track_explicit}{title} - {artist}      |
+| 2  | TITLE_ARTIST_QUALITY  | {title} - {artist} ({quality})          |
+| 3  | ARTIST_TITLE          | {artist} - {title}                      |
+| 4  | ARTIST_TITLE_QUALITY  | {artist} - {title} ({quality})          |
+
+#### Album Folder Formats
+
+| ID | Format Name              | Example Output                          |
+|----|--------------------------|-----------------------------------------|
+| 1  | ALBUM_ARTIST            | {album_explicit}{album} - {album_artist}|
+| 2  | ALBUM_ARTIST_QUALITY    | {album} - {album_artist} ({quality})    |
+| 3  | ARTIST_ALBUM            | {album_artist} - {album}                |
+| 4  | ARTIST_ALBUM_QUALITY    | {album_artist} - {album} ({quality})    |
 
 ## 🔗 Quick Links
 - **Base URL**: [Click Here](https://amazon-music-api.vercel.app)
