@@ -49,7 +49,7 @@ The command-line interface provides easy access to Amazon Music content:
 
 ### Basic Commands
 ```bash
-amazon-music [URL_OR_ID] [OPTIONS]
+amz [URL_OR_ID] [OPTIONS]
 ```
 
 <div align="left">
@@ -57,13 +57,13 @@ amazon-music [URL_OR_ID] [OPTIONS]
 ### Examples
 ```bash
 # Download an album
-amazon-music https://music.amazon.com/albums/B08N5KWB9H
+amz https://music.amazon.com/albums/B077FLX9ZQ?trackAsin=B077F6QG2S
 
 # Download a playlist with high quality
-amazon-music https://music.amazon.com/playlists/B08N5KWB9H -q High
+amz https://music.amazon.com/playlists/B0FBL3CC8M -q High
 
 # Download a track by ID
-amazon-music B08N5KWB9H -t track
+amz B077F6QG2S -t track
 ```
 
 ### CLI Options
@@ -72,18 +72,20 @@ positional arguments:
   url_or_id             Amazon Music URL or ID
 
 options:
-  -h, --help            show this help message and exit
-  -q {Max,Master,High,Normal,Medium,Low,Free}, --quality {Max,Master,High,Normal,Medium,Low,Free}
-                        Audio quality preference (default: Normal)
-  -t {auto,track,album,playlist}, --type {auto,track,album,playlist}
-                        Content type (default: auto-detect)
+  -h, --help      show this help message and exit
+  --config        Interactive configuration setup
+  -q, --quality {Max,Master,High,Normal,Medium,Low,Free}
+          Audio quality preference (default: Normal)
+  -t, --type {auto,track,album,playlist}
+          Content type (default: auto-detect)
   -o OUTPUT, --output OUTPUT
-                        Output directory (default: ./Music)
-  --temp-dir TEMP_DIR   Temporary directory (default: ./Music/temp)
+          Output directory (default: ./Music)
+  --temp-dir TEMP_DIR 
+          Temporary directory (default: ./Music/temp)
   --format-folder {1,2,3,4}
-                        Folder naming format (1-4, default: 4)
+          Folder naming format (1-4, default: 4)
   --format-track {1,2,3,4}
-                        Track naming format (1-4, default: 4)
+          Track naming format (1-4, default: 4)
   --workers WORKERS     Number of parallel download workers (default: 2)
   --zip                 Create ZIP archive for albums/playlists
   --overwrite           Overwrite existing files
