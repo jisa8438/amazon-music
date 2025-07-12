@@ -55,9 +55,7 @@ class AudioConverter:
             audio_codec="aac",
             extra_args=["-metadata:s:a:0", "atmos=true"],
         ),
-        "opus": CodecConfig( 
-            extension=AudioExtension.OPUS, audio_codec="copy"
-        ),
+        "opus": CodecConfig(extension=AudioExtension.OPUS, audio_codec="copy"),
     }
 
     DEFAULT_BITRATE = "128k"
