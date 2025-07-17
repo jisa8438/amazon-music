@@ -17,11 +17,9 @@ from setuptools import find_packages, setup
 AUTHOR = "Amine Soukara"
 EMAIL = "AmineSoukara@gmail.com"
 URL = "https://github.com/AmineSoukara/Amazon-Music"
-VERSION = "1.7.3"  # Using semantic versioning
+VERSION = "1.7.4"  
 
 # Get the long description from README
-
-
 def get_long_description():
     """Read the long description from README.md."""
     try:
