@@ -227,10 +227,7 @@ class AmDownloader:
 
         out_path = out_path or os.path.join(
             self.path_temp,
-            f"{
-                uuid.uuid4()}_{
-                stream_info.get(
-                    'quality', 'audio')}.mp4",
+            f"{uuid.uuid4()}_{stream_info.get('quality', 'audio')}.mp4",
         )
 
         total_bytes = self._calculate_total_bytes(segments)
