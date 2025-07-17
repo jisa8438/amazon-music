@@ -129,7 +129,9 @@ class API:
                     f"Rate limit exceeded. Try after: {retry_after} seconds"
                 )
             elif response.status_code == 403:
-                raise UserBanned("Forbidden, please check your token status or add new one")
+                raise UserBanned(
+                    "Forbidden, please check your token status or add new one"
+                )
             elif not response.ok:
                 raise ApiConnectionError(
                     f"API request failed with status {response.status_code}"
