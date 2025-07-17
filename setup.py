@@ -17,7 +17,7 @@ from setuptools import find_packages, setup
 AUTHOR = "Amine Soukara"
 EMAIL = "AmineSoukara@gmail.com"
 URL = "https://github.com/AmineSoukara/Amazon-Music"
-VERSION = "1.7.4"
+VERSION = "1.7.5"
 
 # Get the long description from README
 
